@@ -1,0 +1,76 @@
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  font-size:110%;
+}
+
+header {
+  text-align: center;
+}
+
+
+#profile-pic{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+.icons{
+  border-radius: 30% ;
+  width: 3rem;
+  height: 3rem;
+}
+
+.container {
+  display: flex;
+
+}
+div {
+  border: none;
+  
+}
+
+h2{
+  text-decoration-line: underline;
+  text-align: center;
+}
+
+.left-side{
+  background-color: grey;
+ 
+}
+
+#location{
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+
+#cellphone{
+border-radius: 50%;
+height: 2rem;
+width: 2rem;
+}
+
+.right-side{
+  padding: 50px;
+ }
+
+.name{
+  text-align: center;
+  font-size: 40px;
+  ;
+}
+
+.nav-menu{
+  background-color: grey;
+  text-align: center;
+  list-style: none;
+}
+
+.lists{
+  list-style: none;
+}
+
+h4{
+ text-decoration-line: underline; 
+}
