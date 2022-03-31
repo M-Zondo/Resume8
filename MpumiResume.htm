@@ -61,29 +61,21 @@
             </ul>
 
             
-            <h2>Links</h2>
-            <!-- This list has images that when clicked on will open in a new tab.-->
-            <ul class = "lists">
-                <li>
-                 <a href = "https://www.linkedin.com/in/mpumelelo-zondo-643785138/" target = "_blank"> 
-                    <img class ="icons" src = "images/linkedin.jpg" alt = "mpumi linkedin"> 
-                </a>
-               <a href = "https://www.facebook.com/mpumi.zondo.3" target = "_blank"> 
-                   <img class = "icons" src = "images/facebook.jpg" alt = "mpumi facebook">
-               </a>
-               <a href = "mailto: mpumizondo97@gmail.com" target = "_blank">
-                   <img class = "icons" src = "images/gmail.png"   alt = "mpumi email">
-                </a>
-                </li>
-            
-            
-            </ul>
+         
         </div>
-        <!-- This section is called right side as this is what I would like to the the second element in my flex box  -->
-        <div class = "right-side">
-            <!-- Introduction paragraph -->
+        <!-- I would like to subdivide my second flex box thus have called it container 2 -->
+        <div class = "container2">
+        <!-- The first element of my subdivided flex box -->
+        <div class = "heading">
             <h1 class = "name"> Mpumelelo Zondo</h1> 
-            <p>I am currently enrolled in my Master's at the University of Cape Town (UCT) specializing in Epidemiology 
+        </div>
+        <!-- This section is called right side as this is what I would like to the the second element of my subdivided flex box  -->
+        <div class = "right-side">
+            
+            <!-- This div is called contents as it has the main information in the cv-->
+            <div class = "contents">
+            <!-- Introduction paragraph -->
+            <p class = "paragraphs" >I am currently enrolled in my Master's at the University of Cape Town (UCT) specializing in Epidemiology 
             and Biostatistics. Outside of UCT I am also enrolled at CodeSpace Academy specializing in Software Development.  
             I am a determined and well rounded individual who is always eager to learn and grow.
             Outside of my studies I am Wine Enthusiast as well an Adrenaline Junkie. I am extremely sociable 
@@ -91,17 +83,16 @@
             
             <!-- This is the navigation menu section. It has a heading called menu and is followed by a list.
             This list references my unique IDs in the code so that when clicked on it goes to the specific section-->
-            <nav>
+            <nav class = "nav-menu">
                 <h2>Menu</h2>
-                <ul class = "nav-menu">
+                <ul class = "lists">
                     <li> <a href = "#education"> Education </a> </li>
                     <li> <a href = "#experience"> Experience </a> </li>
                     <li> <a href = "#skills"> Skills </a> </li>
                 </ul> 
              </nav>
       
-            <!-- This div is called contents as it has the main information in the cv-->
-            <div class = "contents">
+            
                 <!-- This list is to list my academic achievements. The unique ID education is used as this is a section that I have linked 
                 to the navigation menu. -->
                 <h2 id = education> Education</h2>
@@ -132,13 +123,35 @@
                 <h2 id = experience> Experience</h2>
                 <h4>Market Manager, Hoghouse Brewing Company</h4>
                 <h5>Feb 2019 - Nov 2019</h5>
-                <p>Running the Hoghouse stall at the Oranjezicht City Farm Market. Duties included staffing, 
+                <p class = "paragraphs">Running the Hoghouse stall at the Oranjezicht City Farm Market. Duties included staffing, 
                 handling customer service, selling of products, daily cash up and reporting.</p>
-    
             </div>
+        </div>
+            
         </div>
 
     </section>
+    <!-- This is the footer element of my CV that is comprised of links to my facebook, linkedin and gmail-->
+    <footer>
+        <h2>Links</h2>
+        <!-- This list has images that when clicked on will open in a new tab.-->
+        <ul>
+            <li class = "lists">
+             <a href = "https://www.linkedin.com/in/mpumelelo-zondo-643785138/" target = "_blank"> 
+                <img class ="icons" src = "images/linkedin.jpg" alt = "mpumi linkedin"> 
+            </a>
+           <a href = "https://www.facebook.com/mpumi.zondo.3" target = "_blank"> 
+               <img class = "icons" src = "images/facebook.jpg" alt = "mpumi facebook">
+           </a>
+           <a href = "mailto: mpumizondo97@gmail.com" target = "_blank">
+               <img class = "icons" src = "images/gmail.png"   alt = "mpumi email">
+            </a>
+            </li>
+        
+        
+        </ul>
+
+    </footer>
 
     
    
