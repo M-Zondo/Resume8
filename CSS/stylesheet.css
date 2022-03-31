@@ -1,45 +1,55 @@
-*{
+* {
   box-sizing: border-box;
 }
 body{
   font-family: 'Times New Roman', Times, serif;
-  font-size:110%;
-
+  font-size: 1.5vw;
 }
-
-header {
-  text-align: center;
-}
-
 
 #profile-pic{
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 20vw;
+  height: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
 }
 .icons{
   border-radius: 30% ;
   width: 3rem;
-  height: 3rem;
+  height: 3rem; 
 }
-
 .container {
   display: flex;
-
+  flex-wrap: wrap;
 }
 div {
-  border: none;
-  
+  border: none; 
 }
 
-h2{
+h2, h4{
   text-decoration-line: underline;
   text-align: center;
 }
 
+h5, .paragraphs{
+  text-align: center;
+}
+
+
 .left-side{
-  background-color: grey;
- 
+  background:
+    grey url('/images/background1.jpg');
+  display: inline-block; 
+  margin: none;
+  padding-bottom: none;
+  
+}
+
+.container2{
+  display: flex;
+  flex-direction: column;
+  flex:60%;
 }
 
 #location{
@@ -54,18 +64,7 @@ height: 2rem;
 width: 2rem;
 }
 
-.right-side{
-  padding: 50px;
- }
-
-.name{
-  text-align: center;
-  font-size: 40px;
-  ;
-}
-
 .nav-menu{
-  background-color: grey;
   text-align: center;
   list-style: none;
 }
@@ -74,6 +73,56 @@ width: 2rem;
   list-style: none;
 }
 
-h4{
- text-decoration-line: underline; 
+.heading{
+  background:
+  grey url('/images/background1.jpg');
+  height: 10vw;
+  text-align: center;
+  font-size: 3vw;
+}
+
+footer{
+  text-align: center;
+  background: 
+    grey url('/images/background1.jpg');
+    margin: none;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px){
+  .right-side{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100%;  
+  }
+  .left-side{
+     flex:100%;
+  }
+  .heading{
+    flex: 100%;
+    order: -1;
+    background:
+    grey url('/images/background1.jpg');
+    height: 3rem;
+    margin: none;
+    padding: none;
+  }
+  #profile-pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+@media only screen and (max-width: 770px){
+  .container, .container2{
+    display:flex;
+  }
+  .container2{
+    flex-direction: column;
+    flex:30%;
+  }
 }
